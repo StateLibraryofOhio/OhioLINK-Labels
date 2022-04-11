@@ -2453,17 +2453,6 @@
     "route": 1001
   },
   {
-    "id": 223,
-    "libid": "327",
-    "name": "Rio Grande Community College - Meigs",
-    "address": "42377 Charles Chancey Dr",
-    "city": "Pomeroy",
-    "state": "OH",
-    "zip": 45769,
-    "hub": "CMH",
-    "route": 3006
-  },
-  {
     "id": 224,
     "libid": "870",
     "name": "Rodman Public Library",
