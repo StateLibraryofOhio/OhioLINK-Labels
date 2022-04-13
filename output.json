@@ -2563,17 +2563,6 @@
     "route": 2002
   },
   {
-    "id": 234,
-    "libid": "907",
-    "name": "Southeast Regional Book Depository",
-    "address": "30 Park Pl",
-    "city": "Athens",
-    "state": "OH",
-    "zip": 45701,
-    "hub": "CMH",
-    "route": 3006
-  },
-  {
     "id": 235,
     "libid": "336",
     "name": "Southern State Community College - Brown",
