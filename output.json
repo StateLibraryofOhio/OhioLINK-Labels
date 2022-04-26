@@ -2585,17 +2585,6 @@
     "route": 1003
   },
   {
-    "id": 237,
-    "libid": "338",
-    "name": "Southern State Community College - Fayette",
-    "address": "1270 US Highway 62 SW",
-    "city": "Washington Court House",
-    "state": "OH",
-    "zip": 43160,
-    "hub": "CVG",
-    "route": 1004
-  },
-  {
     "id": 238,
     "libid": "906",
     "name": "Southwest Depository",
