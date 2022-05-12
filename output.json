@@ -110,17 +110,6 @@
     "route": 2001
   },
   {
-    "id": 62,
-    "libid": "800",
-    "name": "CLC 800 PCLYB OCL Younkin - Central Library Consortium",
-    "address": "400 W. Johnstown Road",
-    "city": "Gahanna",
-    "state": "OH",
-    "zip": 43230,
-    "hub": "CMH",
-    "route": 3003
-  },
-  {
     "id": 63,
     "libid": "800",
     "name": "CLC 800 PLKM PPL LKR - Central Library Consortium",
