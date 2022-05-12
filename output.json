@@ -110,17 +110,6 @@
     "route": 2001
   },
   {
-    "id": 32,
-    "libid": "800",
-    "name": "CLC 800 C-PDW CML PAR DU - Central Library Consortium",
-    "address": "400 W. Johnstown Road",
-    "city": "Gahanna",
-    "state": "OH",
-    "zip": 43230,
-    "hub": "CMH",
-    "route": 3003
-  },
-  {
     "id": 33,
     "libid": "800",
     "name": "CLC 800 C-REY CML REY - Central Library Consortium",
