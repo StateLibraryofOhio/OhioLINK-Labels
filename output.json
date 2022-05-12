@@ -110,17 +110,6 @@
     "route": 2001
   },
   {
-    "id": 60,
-    "libid": "800",
-    "name": "CLC 800 PCLM Pickaway Main - Central Library Consortium",
-    "address": "400 W. Johnstown Road",
-    "city": "Gahanna",
-    "state": "OH",
-    "zip": 43230,
-    "hub": "CMH",
-    "route": 3003
-  },
-  {
     "id": 61,
     "libid": "800",
     "name": "CLC 800 PCLOS Pickaway Out - Central Library Consortium",
