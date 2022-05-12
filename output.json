@@ -110,17 +110,6 @@
     "route": 2001
   },
   {
-    "id": 49,
-    "libid": "800",
-    "name": "CLC 800 FCDLBA FCD BALT - Central Library Consortium",
-    "address": "400 W. Johnstown Road",
-    "city": "Gahanna",
-    "state": "OH",
-    "zip": 43230,
-    "hub": "CMH",
-    "route": 3003
-  },
-  {
     "id": 50,
     "libid": "800",
     "name": "CLC 800 FCDLBA FCD BALT - Central Library Consortium",
