@@ -110,17 +110,6 @@
     "route": 2001
   },
   {
-    "id": 70,
-    "libid": "800",
-    "name": "CLC 800 UA-MP US Miller Pk - Central Library Consortium",
-    "address": "400 W. Johnstown Road",
-    "city": "Gahanna",
-    "state": "OH",
-    "zip": 43230,
-    "hub": "CMH",
-    "route": 3003
-  },
-  {
     "id": 71,
     "libid": "800",
     "name": "CLC 800 UA-T UA Tremont Rd - Central Library Consortium",
