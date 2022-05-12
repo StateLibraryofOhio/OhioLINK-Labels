@@ -110,17 +110,6 @@
     "route": 2001
   },
   {
-    "id": 77,
-    "libid": "800",
-    "name": "CLC 800 WWPK WL WOR Park - Central Library Consortium",
-    "address": "400 W. Johnstown Road",
-    "city": "Gahanna",
-    "state": "OH",
-    "zip": 43230,
-    "hub": "CMH",
-    "route": 3003
-  },
-  {
     "id": 78,
     "libid": "427",
     "name": "Capital University - Law",
