@@ -65,6 +65,14 @@
                 return n;
             });
 
+            // alphabetize by lib name
+            e.sort(function (a, b) {
+                a = a.name.toLowerCase();
+                b = b.name.toLowerCase();
+
+                return a < b ? -1 : a > b ? 1 : 0;
+            });
+
             fillDivWithJSON(e);
             initSearchVars();
         }
