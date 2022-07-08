@@ -1518,17 +1518,6 @@
     "route": 3003
   },
   {
-    "id": 206,
-    "libid": "527",
-    "name": "Ohio State University - OARDC",
-    "address": "1680 Madison Ave",
-    "city": "Wooster",
-    "state": "OH",
-    "zip": 44691,
-    "hub": "CLE",
-    "route": 4002
-  },
-  {
     "id": 207,
     "libid": "539",
     "name": "Ohio State University - Pataskala",
