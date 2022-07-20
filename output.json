@@ -1386,17 +1386,6 @@
     "route": 3003
   },
   {
-    "id": 194,
-    "libid": "428",
-    "name": "Ohio Northern University - Law",
-    "address": "415 S Gilbert St",
-    "city": "Ada",
-    "state": "OH",
-    "zip": 45810,
-    "hub": "TOL",
-    "route": 5003
-  },
-  {
     "id": 195,
     "libid": "402",
     "name": "Ohio Northern University - Main",
