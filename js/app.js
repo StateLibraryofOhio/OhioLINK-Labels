@@ -11,6 +11,7 @@ function addCustomLabel() {
     var libid = String(document.getElementById('custom-libid').value);
     var name = document.getElementById('custom-name').value;
     var address = document.getElementById('custom-address').value;
+    var address2 = document.getElementById('custom-address2').value;
     var city = document.getElementById('custom-city').value;
     var state = document.getElementById('custom-state').value;
     var zip = document.getElementById('custom-zip').value;
@@ -21,6 +22,7 @@ function addCustomLabel() {
             "libid": libid,
             "name": name,
             "address": address,
+            "address2": address2,
             "city": city,
             "state": state,
             "zip": parseInt(zip),
@@ -63,6 +65,9 @@ function getLabelData() {
                 e.textContent = source.address;
                 break;
             case "from-address-2":
+                e.textContent = source.address2;
+                break;
+            case "from-city-state-zip":
                 e.textContent = [source.city, source.state, source.zip].join(" ");
                 break;
             case "to-id":
@@ -75,6 +80,9 @@ function getLabelData() {
                 e.textContent = destination.address;
                 break;
             case "to-address-2":
+                e.textContent = destination.address2;
+                break;
+            case "to-city-state-zip":
                 e.textContent = [destination.city, destination.state, destination.zip].join(" ");
                 break;
             case "hub":
