@@ -4,7 +4,7 @@
     "libid": "835",
     "name": "Akron-Summit Public Library",
     "address": "60 S High St",
-    "address2" : "Warning: hungry leopard",
+    "address2" : "",
     "city": "Akron",
     "state": "OH",
     "zip": 44326,
@@ -2541,18 +2541,6 @@
     "state": "OH",
     "zip": 44555,
     "hub": "CLE",
-    "route": 4003
-  },
-  {
-    "id": 28493,
-    "libid": "38977",
-    "name": "A-plus SLO Library Testing",
-    "address": "1685 First Avenue",
-    "address2": "Second floor; Balcony",
-    "city": "Grandview Heights",
-    "state": "OH",
-    "zip": 43212,
-    "hub": "CMH",
     "route": 4003
   }
 ]
