@@ -1716,18 +1716,6 @@
     "route": 3006
   },
   {
-    "id": 213,
-    "libid": "535",
-    "name": "Ohio University - Proctorville",
-    "address": "111 Private Drive 516",
-    "address2": "",
-    "city": "Proctorville",
-    "state": "OH",
-    "zip": 45669,
-    "hub": "CVG",
-    "route": 1001
-  },
-  {
     "id": 214,
     "libid": "531",
     "name": "Ohio University - Zanesville",
