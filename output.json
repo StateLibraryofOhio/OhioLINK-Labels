@@ -24,18 +24,6 @@
     "route": 2003
   },
   {
-    "id": 2,
-    "libid": "604",
-    "name": "Antioch University",
-    "address": "900 Dayton St",
-    "address2": "",
-    "city": "Yellow Springs",
-    "state": "OH",
-    "zip": 45387,
-    "hub": "DAY",
-    "route": 2003
-  },
-  {
     "id": 3,
     "libid": "415",
     "name": "Ashland University-Archer Library",
