@@ -1896,30 +1896,6 @@
     "route": 1004
   },
   {
-    "id": 231,
-    "libid": "340",
-    "name": "Sinclair Community College - Englewood",
-    "address": "1150 W National Rd",
-    "address2": "",
-    "city": "Englewood",
-    "state": "OH",
-    "zip": 45315,
-    "hub": "DAY",
-    "route": 2002
-  },
-  {
-    "id": 232,
-    "libid": "345",
-    "name": "Sinclair Community College - Huber Heights",
-    "address": "7301 Shull Rd",
-    "address2": "",
-    "city": "Dayton",
-    "state": "OH",
-    "zip": 45424,
-    "hub": "DAY",
-    "route": 2003
-  },
-  {
     "id": 233,
     "libid": "314",
     "name": "Sinclair Community College - Main",
