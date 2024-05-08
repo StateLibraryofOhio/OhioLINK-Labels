@@ -1452,18 +1452,6 @@
     "route": 5002
   },
   {
-    "id": 190,
-    "libid": "418",
-    "name": "Notre Dame College",
-    "address": "4545 College Rd",
-    "address2": "",
-    "city": "Cleveland",
-    "state": "OH",
-    "zip": 44121,
-    "hub": "CLE",
-    "route": 4006
-  },
-  {
     "id": 191,
     "libid": "401",
     "name": "Oberlin College",
