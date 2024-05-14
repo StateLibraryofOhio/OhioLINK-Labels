@@ -864,30 +864,6 @@
     "route": 4003
   },
   {
-    "id": 141,
-    "libid": "308",
-    "name": "Eastern Gateway Community College - Main",
-    "address": "4000 Sunset Blvd",
-    "address2": "",
-    "city": "Steubenville",
-    "state": "OH",
-    "zip": 43952,
-    "hub": "CLE",
-    "route": 4001
-  },
-  {
-    "id": 142,
-    "libid": "319",
-    "name": "Eastern Gateway Community College - Youngstown",
-    "address": "101 E Federal St",
-    "address2": "",
-    "city": "Youngstown",
-    "state": "OH",
-    "zip": 44503,
-    "hub": "CLE",
-    "route": 4003
-  },
-  {
     "id": 143,
     "libid": "366",
     "name": "Edison State Community College - Darke",
