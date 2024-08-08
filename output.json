@@ -2004,18 +2004,6 @@
     "route": 2003
   },
   {
-    "id": 247,
-    "libid": "570",
-    "name": "University of Akron - Lakewood",
-    "address": "13701 Lake Ave",
-    "address2": "",
-    "city": "Lakewood",
-    "state": "OH",
-    "zip": 44107,
-    "hub": "CLE",
-    "route": 4009
-  },
-  {
     "id": 248,
     "libid": "537",
     "name": "University of Akron - Law",
