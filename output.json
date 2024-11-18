@@ -2316,18 +2316,6 @@
     "route": 4001
   },
   {
-    "id": 274,
-    "libid": "437",
-    "name": "Westerville Public Library",
-    "address": "126 S State St",
-    "address2": "",
-    "city": "Westerville",
-    "state": "OH",
-    "zip": 43081,
-    "hub": "CMH",
-    "route": 3003
-  },
-  {
     "id": 275,
     "libid": "885",
     "name": "Westlake Porter Public Library",
