@@ -2028,18 +2028,6 @@
     "route": 4005
   },
   {
-    "id": 250,
-    "libid": "571",
-    "name": "University of Akron - Medina",
-    "address": "6300 Technology Ln",
-    "address2": "",
-    "city": "Medina",
-    "state": "OH",
-    "zip": 44256,
-    "hub": "CLE",
-    "route": 4002
-  },
-  {
     "id": 251,
     "libid": "501",
     "name": "University of Akron - Wayne",
