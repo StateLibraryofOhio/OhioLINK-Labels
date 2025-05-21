@@ -1836,30 +1836,6 @@
     "route": 1001
   },
   {
-    "id": 229,
-    "libid": "343",
-    "name": "Sinclair Community College - Centerville",
-    "address": "5800 Clyo Rd",
-    "address2": "",
-    "city": "Dayton",
-    "state": "OH",
-    "zip": 45459,
-    "hub": "DAY",
-    "route": 2004
-  },
-  {
-    "id": 230,
-    "libid": "344",
-    "name": "Sinclair Community College - Courseview",
-    "address": "5386 Courseview Dr",
-    "address2": "",
-    "city": "Mason",
-    "state": "OH",
-    "zip": 45040,
-    "hub": "CVG",
-    "route": 1004
-  },
-  {
     "id": 233,
     "libid": "314",
     "name": "Sinclair Community College - Main",
