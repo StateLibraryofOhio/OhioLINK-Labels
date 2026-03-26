@@ -915,7 +915,7 @@
     "id": 147,
     "libid": "699",
     "name": "Greene County Public Library",
-    "address": "503 Kinsey Road",
+    "address": "76 East Market Street",
     "address2": "",
     "city": "Xenia",
     "state": "OH",
@@ -1167,7 +1167,7 @@
     "id": 168,
     "libid": "830",
     "name": "Louisville Public Library",
-    "address": "700 Lincoln Ave",
+    "address": "1600 South Nickelplate St.",
     "address2": "",
     "city": "Louisville",
     "state": "OH",
@@ -1359,7 +1359,7 @@
     "id": 184,
     "libid": "801",
     "name": "Muskingum County Library",
-    "address": "1425 Newark Road",
+    "address": "220 North 5th Street",
     "address2": "",
     "city": "Zanesville",
     "state": "OH",
@@ -1824,30 +1824,6 @@
     "route": 1001
   },
   {
-    "id": 229,
-    "libid": "343",
-    "name": "Sinclair Community College - Centerville",
-    "address": "5800 Clyo Rd",
-    "address2": "",
-    "city": "Dayton",
-    "state": "OH",
-    "zip": 45459,
-    "hub": "DAY",
-    "route": 2004
-  },
-  {
-    "id": 230,
-    "libid": "344",
-    "name": "Sinclair Community College - Courseview",
-    "address": "5386 Courseview Dr",
-    "address2": "",
-    "city": "Mason",
-    "state": "OH",
-    "zip": 45040,
-    "hub": "CVG",
-    "route": 1004
-  },
-  {
     "id": 233,
     "libid": "314",
     "name": "Sinclair Community College - Main",
@@ -1899,7 +1875,7 @@
     "id": 239,
     "libid": "825",
     "name": "Stark County District Library",
-    "address": "715 Market Ave N",
+    "address": "811 Cleveland Avenue NW",
     "address2": "",
     "city": "Canton",
     "state": "OH",
@@ -1982,7 +1958,7 @@
   {
     "id": 245,
     "libid": "646",
-    "name": "Trinity Lutheran Seminary",
+    "name": "Capital Univ - Hamma Library (Trinity Lutheran Seminary)",
     "address": "2199 E Main St",
     "address2": "",
     "city": "Columbus",
@@ -2026,18 +2002,6 @@
     "zip": 44325,
     "hub": "CLE",
     "route": 4005
-  },
-  {
-    "id": 250,
-    "libid": "571",
-    "name": "University of Akron - Medina",
-    "address": "6300 Technology Ln",
-    "address2": "",
-    "city": "Medina",
-    "state": "OH",
-    "zip": 44256,
-    "hub": "CLE",
-    "route": 4002
   },
   {
     "id": 251,
@@ -2283,11 +2247,11 @@
     "id": 271,
     "libid": "890",
     "name": "Washington - Centerville Public Library",
-    "address": "111 W Spring Valley Pike",
+    "address": "6060 Far Hills Avenue",
     "address2": "",
     "city": "Centerville",
     "state": "OH",
-    "zip": 45458,
+    "zip": 45459,
     "hub": "DAY",
     "route": 2004
   },
@@ -2314,18 +2278,6 @@
     "zip": 43968,
     "hub": "CLE",
     "route": 4001
-  },
-  {
-    "id": 274,
-    "libid": "437",
-    "name": "Westerville Public Library",
-    "address": "126 S State St",
-    "address2": "",
-    "city": "Westerville",
-    "state": "OH",
-    "zip": 43081,
-    "hub": "CMH",
-    "route": 3003
   },
   {
     "id": 275,
