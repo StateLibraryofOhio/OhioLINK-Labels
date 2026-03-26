@@ -73,7 +73,7 @@
     }
 
     .label-to-id {
-        font-size: 15pt;
+        font-size: 12pt;
         font-weight: bold;
         display: inline-block;
     }
@@ -88,8 +88,8 @@
     }
 
     .label-seo {
-        font-size: 9pt;
-        margin-left: 14pt;
+        font-size: 14pt;
+        margin-left: 9pt;
         font-weight: bold;
         display: inline;
 

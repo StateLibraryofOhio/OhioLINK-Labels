@@ -1,28 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta content="initial-scale=1.0 , minimum-scale=1.0 , maximum-scale=1.0" name="viewport">
-  <title>OhioLINK &amp; SearchOhio Delivery Labels - Manifest</title>
-  <link href="css/bootstrap.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OhioLINK &amp; SearchOhio Delivery Labels - Manifest</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <style>
+        .table th { white-space: nowrap; }
+    </style>
 </head>
+
 <body class="bg-light">
-<div class="container-md">
-  <div class="py-3 text-center">
-    <img alt="Logo" class="img-fluid mt-2 mb-4" height="121" src="img/logo.png" width="665">
-    <h1>OhioLINK &amp; SearchOhio Delivery Manifest</h1>
-  </div>
-  <div class="row justify-content-center">
-    <label class="form-label d-none invisible" for="manifest-search">Search</label>
-    <div class="input-group input-group-lg">
-      <input class="form-control" id="manifest-search" onkeyup="searchManifest();" placeholder="Search any keyword..." type="text">
+
+<!-- Skip navigation link (visually hidden until focused) -->
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="container-md pt-4 text-center">
+    <img alt="OhioLINK Logo" class="img-fluid mt-0 mb-3" height="121" src="img/logo.png" width="665">
+    <h1>OhioLINK &amp; SearchOhio Delivery Labels</h1>
+    <p><em>for Priority Dispatch</em></p>
+    <p class="lead">Search the manifest by any keyword.</p>
+</header>
+
+<nav aria-label="Site navigation" class="container-md">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <ul class="list-inline d-flex justify-content-end mb-0">
+                <li class="list-inline-item"><a href="/index.html" title="Return to home page">Home</a></li>
+                <li class="list-inline-item">|</li>
+                <li class="list-inline-item">
+                    <a href="https://sds-labels.library.ohio.gov/manifest.html"
+                       title="Switch to Public Library Shipping Labels">Public Library Manifest</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="col-12 mt-4" id="manifest">
-      <!--table will populate here-->
+</nav>
+
+<main id="main-content" class="container-md">
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="input-group input-group-lg mb-4">
+                <label class="visually-hidden sr-only" for="manifest-search">Search</label>
+                <input class="form-control"
+                       id="manifest-search"
+                       onkeyup="searchManifest();"
+                       placeholder="Search any keyword..."
+                       type="text"
+                       autocomplete="off">
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-</body>
+
+    <div class="row justify-content-center">
+        <div class="col-12" id="manifest">
+            <!-- table will populate here -->
+        </div>
+    </div>
+
+</main>
+
+<footer class="container-md py-4 text-center text-muted">
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
 <script>
     function fillDivWithJSON(e) {
         for (e, o = [], r = 0; r < e.length; r++) {
@@ -38,7 +81,7 @@
             for (let r = 0; r < e.length; r++) {
                 a = n.insertRow(-1);
                 for (let c = 0; c < o.length; c++) {
-                    a.insertCell(-1).innerHTML = e[r][o[c]]
+                    a.insertCell(-1).innerHTML = e[r][o[c]];
                 }
             }
             let l = document.getElementById("manifest");
@@ -59,7 +102,7 @@
             // filter JSON
             e = e.map(x => {
                 let n = {};
-                for (c of d) {
+                for (let c of d) {
                     n[c] = x[c];
                 }
                 return n;
@@ -69,7 +112,6 @@
             e.sort(function (a, b) {
                 a = a.name.toLowerCase();
                 b = b.name.toLowerCase();
-
                 return a < b ? -1 : a > b ? 1 : 0;
             });
 
@@ -80,31 +122,28 @@
     xmlhttp.open("GET", "output.json", true);
     xmlhttp.send();
 
-    // add search function
     let input, table, tr;
 
     function initSearchVars() {
-        input = document.getElementsByTagName("input")[0];
-        table = document.getElementsByTagName("table")[0];
+        input = document.getElementById("manifest-search");
+        table = document.querySelector("#manifest table");
         tr = table.getElementsByTagName("tr");
     }
 
     function searchManifest() {
-        let filter, td, cell, i, j;
-        filter = input.value.toUpperCase();
-        for (i = 1; i < tr.length; i++) {
-            tr[i].style.display = "none";
-            td = tr[i].getElementsByTagName("td");
-            for (j = 0; j < td.length; j++) {
-                cell = tr[i].getElementsByTagName("td")[j];
-                if (cell) {
-                    if (cell.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                        tr[i].style.display = "";
-                        break;
-                    }
+        let filter = input.value.toUpperCase();
+        for (let i = 1; i < tr.length; i++) {
+            let td = tr[i].getElementsByTagName("td");
+            let visible = false;
+            for (let j = 0; j < td.length; j++) {
+                if (td[j] && td[j].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    visible = true;
+                    break;
                 }
             }
+            tr[i].style.display = visible ? "" : "none";
         }
     }
 </script>
+</body>
 </html>

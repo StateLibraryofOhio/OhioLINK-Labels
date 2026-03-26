@@ -1,0 +1,33 @@
+a {
+  color: #0054b3;
+}
+
+a:hover,
+a:focus {
+  color: #003d82;
+}
+
+/* Skip-to-content link — hidden until focused */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  background: #0d6efd;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0 0 0.25rem 0.25rem;
+  font-weight: 600;
+  z-index: 9999;
+  text-decoration: none;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Ensure focus indicators are always visible (WCAG 2.4.7) */
+:focus-visible {
+  outline: 3px solid #0d6efd;
+  outline-offset: 2px;
+}

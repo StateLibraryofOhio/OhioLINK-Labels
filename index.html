@@ -1,92 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta content="initial-scale=1.0 , minimum-scale=1.0 , maximum-scale=1.0" name="viewport">
-  <title>OhioLINK &amp; SearchOhio Delivery Labels</title>
-  <link href="css/bootstrap.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OhioLINK &amp; SearchOhio Delivery Labels</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 </head>
-<body class="bg-light" onload="initDB();">
-<div class="container-md">
-  <div class="py-3 text-center">
-    <img alt="Logo" class="img-fluid mt-2 mb-4" height="121" src="img/logo.png" width="665">
+
+<body class="bg-light">
+
+<!-- Skip navigation link (visually hidden until focused) -->
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="container-md pt-4 text-center">
+    <img alt="OhioLINK Logo" class="img-fluid mt-0 mb-3" height="121" src="img/logo.png" width="665">
     <h1>OhioLINK &amp; SearchOhio Delivery Labels</h1>
     <p><em>for Priority Dispatch</em></p>
     <p class="lead">Choose the source and destination for your labels and click &quot;Print&quot;.</p>
-  </div>
-  <div class="row justify-content-center">
-    <div class="col-md-8">
-      <form id="labels" name="labels">
-        <label class="form-label" for="source">SOURCE</label>
-        <p class="float-right">
-          <a href="manifest.html">Manifest</a> |
-          <a data-target="#custom-label" data-toggle="modal" href="#">Use custom</a> |
-          <a href="https://sds-labels.library.ohio.gov/"
-             title="Switch to Public Library Shipping Labels">Public Library Labels</a>
-        </p>
-        <select aria-label="Source address" autocomplete="off" class="form-select form-select-lg mb-3" id="source" onchange="getLabelData();" required>
-          <option disabled selected value="-">Choose a library...</option>
-        </select>
-        <label class="form-label" for="destination">DESTINATION</label>
-        <select aria-label="Destination address" autocomplete="off" class="form-select form-select-lg mb-3" id="destination" onchange="getLabelData();" required>
-          <option disabled selected value="-">Choose a library...</option>
-        </select>
-        <button class="btn btn-lg btn-primary mt-1" onclick="printLabels();" type="button">Print</button>
-      </form>
+</header>
+
+<nav aria-label="Site navigation" class="container-md">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <ul class="list-inline d-flex justify-content-end mb-0">
+                <li class="list-inline-item"><a href="/manifest.html" title="View the manifest">Manifest</a></li>
+                <li class="list-inline-item">|</li>
+                <li class="list-inline-item">
+                    <a href="#" title="Create a custom Source label"
+                       data-bs-toggle="modal" data-bs-target="#custom-label">Use custom</a>
+                </li>
+                <li class="list-inline-item">|</li>
+                <li class="list-inline-item">
+                    <a href="https://sds-labels.library.ohio.gov/"
+                       title="Switch to Public Library Shipping Labels">Public Library Labels</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
-  <div class="row justify-content-center mt-2">
-    <div class="col-md-8">
-      <p class="text-center lead">PREVIEW</p>
-      <hr>
-      <!-- IFRAME for building labels, displaying preview -->
-      <iframe class="mt-1" id="output" style="width:100%; height:300px;" src="template.html"></iframe>
-      <hr>
+</nav>
+
+<main id="main-content" class="container-md">
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <form id="labels" name="labels">
+                <div class="mb-3">
+                    <label class="form-label" for="source">SOURCE</label>
+                    <select id="source" class="form-select form-select-lg" required autocomplete="off">
+                        <option disabled selected value="-">Choose a library...</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="destination">DESTINATION</label>
+                    <select id="destination" class="form-select form-select-lg" required autocomplete="off">
+                        <option disabled selected value="-">Choose a library...</option>
+                    </select>
+                </div>
+
+                <button class="btn btn-lg btn-primary mt-1" id="print-btn" type="button">
+                    Print
+                </button>
+            </form>
+        </div>
     </div>
-  </div>
-  <!-- Hidden Modal for Custom Label -->
-  <div aria-hidden="true" class="modal fade" id="custom-label" tabindex="-1">
+
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-8">
+            <h2 class="text-center">Preview</h2>
+            <hr>
+            <iframe
+                    id="output"
+                    class="mt-1"
+                    src="template.html"
+                    title="Label preview"
+                    style="width:100%; height:300px;"
+                    aria-live="polite"
+            ></iframe>
+            <hr>
+        </div>
+    </div>
+
+</main>
+
+<footer class="container-md py-4 text-center text-muted">
+</footer>
+
+<!-- Modal for Custom Label -->
+<div aria-labelledby="custom-label-title"
+     aria-modal="true"
+     class="modal fade"
+     id="custom-label"
+     role="dialog"
+     tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <form class="row g-3 m-4" onsubmit="event.preventDefault(); addCustomLabel();">
-          <div class="col-md-3">
-            <label class="form-label" for="custom-libid">ID</label>
-            <input class="form-control" id="custom-libid" type="text">
-          </div>
-          <div class="col-md-9">
-            <label class="form-label" for="custom-name">Name</label>
-            <input class="form-control" id="custom-name" type="text">
-          </div>
-          <div class="col-12">
-            <label class="form-label" for="custom-address">Address</label>
-            <input class="form-control" id="custom-address" placeholder="1234 Main St" type="text">
-          </div>
-          <div class="coll-12">
-             <label class="form-label" for="custom-address2">Address line 2 (optional)</label>
-             <input class="form-control" id="custom-address2" placeholder="Suite 3475" type="text">
-          </div>
-          <div class="col-md-6">
-            <label class="form-label" for="custom-city">City</label>
-            <input class="form-control" id="custom-city" type="text">
-          </div>
-          <div class="col-md-3">
-            <label class="form-label" for="custom-state">State</label>
-            <select class="form-select" id="custom-state">
-              <option disabled selected value="OH">OH</option>
-            </select>
-          </div>
-          <div class="col-md-3">
-            <label class="form-label" for="custom-zip">Zip</label>
-            <input class="form-control" id="custom-zip" type="text">
-          </div>
-          <div class="col-12">
-            <button class="btn btn-primary float-right" type="submit">Submit</button>
-          </div>
-        </form>
-      </div>
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h2 class="modal-title h5" id="custom-label-title">Custom Label</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <form class="row g-3 m-4" id="custom-label-form" novalidate>
+                <div class="col-md-3">
+                    <label class="form-label" for="custom-libid">ID</label>
+                    <input class="form-control"
+                           id="custom-libid"
+                           type="text"
+                           autocomplete="off">
+                </div>
+                <div class="col-md-9">
+                    <label class="form-label" for="custom-name">Name</label>
+                    <input class="form-control"
+                           id="custom-name"
+                           type="text"
+                           autocomplete="organization">
+                </div>
+                <div class="col-12">
+                    <label class="form-label" for="custom-address">Address</label>
+                    <input class="form-control"
+                           id="custom-address"
+                           placeholder="1234 Main St"
+                           type="text"
+                           autocomplete="street-address">
+                </div>
+                <div class="col-12">
+                    <label class="form-label" for="custom-address2">Address line 2 (optional)</label>
+                    <input class="form-control"
+                           id="custom-address2"
+                           placeholder="Suite 3475"
+                           type="text"
+                           autocomplete="address-line2">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="custom-city">City</label>
+                    <input class="form-control"
+                           id="custom-city"
+                           type="text"
+                           autocomplete="address-level2">
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label" for="custom-state">State</label>
+                    <select class="form-select"
+                            id="custom-state"
+                            autocomplete="address-level1">
+                        <option value="OH">OH</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label" for="custom-zip">Zip</label>
+                    <input class="form-control"
+                           id="custom-zip"
+                           type="text"
+                           inputmode="numeric"
+                           autocomplete="postal-code">
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary float-end" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
     </div>
-  </div>
 </div>
+
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/taffy-min.js"></script>
 <script defer src="js/app.js"></script>

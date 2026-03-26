@@ -3,6 +3,7 @@ let destination;
 let db;
 let data;
 let matches;
+let this_modal;
 
 function addCustomLabel() {
 
@@ -46,12 +47,11 @@ function addCustomLabel() {
 
 function getLabelData() {
     if (!matches) {
-        // Generate NodeList of all label data elements
         matches = window.frames["output"].contentDocument.querySelectorAll('[data-label]');
     }
 
-    source = db({id: parseInt(document.labels.source.value)}).first();
-    destination = db({id: parseInt(document.labels.destination.value)}).first();
+    source = db({id: parseInt(document.getElementById('source').value)}).first();
+    destination = db({id: parseInt(document.getElementById('destination').value)}).first();
 
     for (const e of matches) {
         switch (e.dataset.label) {
@@ -108,7 +108,7 @@ function loadOptions() {
         let x, y;
         x = document.createElement("option");
         y = document.createElement("option");
-        x.text = y.text = record["name"] + " (" + record["libid"] + ") ";
+        x.text = y.text = record["name"] + " (" + record["libid"] + ") "; // ex: Huntington Branch Library (4809)
         x.value = y.value = record["id"];
         document.getElementById("source").add(x);
         document.getElementById("destination").add(y);
@@ -130,14 +130,34 @@ function initDB() {
     xmlhttp.send();
 }
 
-// Small helper for modal form focus
-let myModal = document.getElementById('custom-label');
-let myInput = document.getElementById('custom-libid');
-myModal.addEventListener('shown.bs.modal', function () {
-    myInput.focus();
-});
+document.addEventListener('DOMContentLoaded', function () {
 
-// Needed for toggling modal visibility
-let this_modal = new bootstrap.Modal(document.getElementById('custom-label'), {
-    keyboard: false
-})
+    initDB();
+
+    // Auto-update preview when selections change
+    document.getElementById('source').addEventListener('change', function () {
+            getLabelData();
+    });
+
+    document.getElementById('destination').addEventListener('change', function () {
+            getLabelData();
+    });
+
+    // Print button
+    document.getElementById('print-btn').addEventListener('click', printLabels);
+
+    // Custom label form submit
+    document.getElementById('custom-label-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        addCustomLabel();
+    });
+
+    // Modal focus on open
+    let myModal = document.getElementById('custom-label');
+    let myInput = document.getElementById('custom-libid');
+    myModal.addEventListener('shown.bs.modal', function () {
+        myInput.focus();
+    });
+
+    this_modal = new bootstrap.Modal(myModal, { keyboard: false });
+});

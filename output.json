@@ -4,7 +4,7 @@
     "libid": "835",
     "name": "Akron-Summit Public Library",
     "address": "60 S High St",
-    "address2" : "",
+    "address2": "",
     "city": "Akron",
     "state": "OH",
     "zip": 44326,
@@ -156,10 +156,10 @@
     "route": 4006
   },
   {
-    "id": 82,
-    "libid": "555",
-    "name": "Case Western Reserve University - MSASS",
-    "address": "11235 Bellflower Rd",
+    "id": 83,
+    "libid": "203",
+    "name": "Case Western Reserve University - Main",
+    "address": "11055 Euclid Ave",
     "address2": "",
     "city": "Cleveland",
     "state": "OH",
@@ -168,10 +168,10 @@
     "route": 4006
   },
   {
-    "id": 83,
-    "libid": "203",
-    "name": "Case Western Reserve University - Main",
-    "address": "11055 Euclid Ave",
+    "id": 82,
+    "libid": "555",
+    "name": "Case Western Reserve University - MSASS",
+    "address": "11235 Bellflower Rd",
     "address2": "",
     "city": "Cleveland",
     "state": "OH",
@@ -304,7 +304,7 @@
     "libid": "432",
     "name": "Cleveland Clinic",
     "address2": "JJ Building - South 4th Flr",
-    "address":"9211 Euclid Ave",
+    "address": "9211 Euclid Ave",
     "city": "Cleveland",
     "state": "OH",
     "zip": 44195,
@@ -490,6 +490,18 @@
     "zip": 44122,
     "hub": "CLE",
     "route": 4006
+  },
+  {
+    "id": 133,
+    "libid": "476",
+    "name": "Cuyahoga County Public Library - Bedford Branch",
+    "address": "70 Columbus Rd.",
+    "address2": "",
+    "city": "Bedford",
+    "state": "OH",
+    "zip": 44146,
+    "hub": "CLE",
+    "route": 4004
   },
   {
     "id": 110,
@@ -708,18 +720,6 @@
     "route": 4009
   },
   {
-    "id": 128,
-    "libid": "440",
-    "name": "Cuyahoga County Public Library - Parma-Snow Branch",
-    "address": "2121 Snow Road",
-    "address2": "",
-    "city": "Parma",
-    "state": "OH",
-    "zip": 44134,
-    "hub": "CLE",
-    "route": 4009
-  },
-  {
     "id": 129,
     "libid": "448",
     "name": "Cuyahoga County Public Library - Parma Powers Branch",
@@ -728,6 +728,18 @@
     "city": "Parma",
     "state": "OH",
     "zip": 44129,
+    "hub": "CLE",
+    "route": 4009
+  },
+  {
+    "id": 128,
+    "libid": "440",
+    "name": "Cuyahoga County Public Library - Parma-Snow Branch",
+    "address": "2121 Snow Road",
+    "address2": "",
+    "city": "Parma",
+    "state": "OH",
+    "zip": 44134,
     "hub": "CLE",
     "route": 4009
   },
@@ -766,18 +778,6 @@
     "zip": 44121,
     "hub": "CLE",
     "route": 4006
-  },
-  {
-    "id": 133,
-    "libid": "476",
-    "name": "Cuyahoga County Public Library - Bedford Branch",
-    "address": "70 Columbus Rd.",
-    "address2": "",
-    "city": "Bedford",
-    "state": "OH",
-    "zip": 44146,
-    "hub": "CLE",
-    "route": 4004
   },
   {
     "id": 134,
@@ -1788,18 +1788,6 @@
     "route": 4003
   },
   {
-    "id": 225,
-    "libid": "250",
-    "name": "SUPPLIES - State Library of Ohio",
-    "address": "274 E 1st Ave",
-    "address2": "",
-    "city": "Columbus",
-    "state": "OH",
-    "zip": 43201,
-    "hub": "CMH",
-    "route": 3003
-  },
-  {
     "id": 226,
     "libid": "670",
     "name": "Saint Mary Seminary",
@@ -1942,6 +1930,18 @@
     "zip": 44224,
     "hub": "CLE",
     "route": 4005
+  },
+  {
+    "id": 225,
+    "libid": "250",
+    "name": "SUPPLIES - State Library of Ohio",
+    "address": "274 E 1st Ave",
+    "address2": "",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": 43201,
+    "hub": "CMH",
+    "route": 3003
   },
   {
     "id": 242,
