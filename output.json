@@ -108,6 +108,18 @@
     "route": 2001
   },
   {
+    "id": 245,
+    "libid": "646",
+    "name": "Capital Univ - Hamma Library (Trinity Lutheran Seminary)",
+    "address": "2199 E Main St",
+    "address2": "",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": 43209,
+    "hub": "CMH",
+    "route": 3003
+  },
+  {
     "id": 78,
     "libid": "427",
     "name": "Capital University - Law",
@@ -1954,18 +1966,6 @@
     "zip": 43604,
     "hub": "TOL",
     "route": 5004
-  },
-  {
-    "id": 245,
-    "libid": "646",
-    "name": "Capital Univ - Hamma Library (Trinity Lutheran Seminary)",
-    "address": "2199 E Main St",
-    "address2": "",
-    "city": "Columbus",
-    "state": "OH",
-    "zip": 43209,
-    "hub": "CMH",
-    "route": 3003
   },
   {
     "id": 246,
