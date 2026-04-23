@@ -1176,18 +1176,6 @@
     "route": 4008
   },
   {
-    "id": 168,
-    "libid": "830",
-    "name": "Louisville Public Library",
-    "address": "1600 South Nickelplate St.",
-    "address2": "",
-    "city": "Louisville",
-    "state": "OH",
-    "zip": 44641,
-    "hub": "CLE",
-    "route": 4003
-  },
-  {
     "id": 169,
     "libid": "616",
     "name": "Lourdes University",
@@ -1786,18 +1774,6 @@
     "zip": 45674,
     "hub": "CVG",
     "route": 1001
-  },
-  {
-    "id": 224,
-    "libid": "870",
-    "name": "Rodman Public Library",
-    "address": "215 E Broadway St",
-    "address2": "",
-    "city": "Alliance",
-    "state": "OH",
-    "zip": 44601,
-    "hub": "CLE",
-    "route": 4003
   },
   {
     "id": 226,
