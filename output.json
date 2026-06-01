@@ -1092,18 +1092,6 @@
     "route": 4005
   },
   {
-    "id": 161,
-    "libid": "515",
-    "name": "Kent State University - Twinsburg",
-    "address": "10050 Ravenna Rd",
-    "address2": "",
-    "city": "Twinsburg",
-    "state": "OH",
-    "zip": 44087,
-    "hub": "CLE",
-    "route": 4003
-  },
-  {
     "id": 162,
     "libid": "703",
     "name": "Kenyon College",
