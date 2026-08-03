@@ -2362,5 +2362,17 @@
     "zip": 44555,
     "hub": "CLE",
     "route": 4003
+  },
+  {
+    "id": 285,
+    "libid": "221",
+    "name": "Youngstown State University - Steubenville",
+    "address": "4000 Sunset Boulevart",
+    "address2": "",
+    "city": "Steubenville",
+    "state": "OH",
+    "zip": 43952,
+    "hub": "CLE",
+    "route": 4001
   }
 ]
