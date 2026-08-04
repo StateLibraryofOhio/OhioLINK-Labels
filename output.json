@@ -2256,6 +2256,18 @@
     "route": 4008
   },
   {
+    "id": 286,
+    "libid": "629",
+    "name": "Wilberforce University",
+    "address": "1055 N. Bickett Road",
+    "address2": "",
+    "city": "Wilberforce",
+    "state": "OH",
+    "zip": 45384,
+    "hub": "DAY",
+    "route": 2004
+  },
+  {
     "id": 276,
     "libid": "631",
     "name": "Wilmington College",
