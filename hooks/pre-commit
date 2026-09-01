@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Blocks commits that leave output.json malformed or with duplicate ids/libids.
+# Enable with: git config core.hooksPath hooks
+set -euo pipefail
+
+if ! git diff --cached --name-only | grep -qx 'output.json'; then
+    exit 0
+fi
+
+repo_root=$(git rev-parse --show-toplevel)
+tmpfile=$(mktemp)
+trap 'rm -f "$tmpfile"' EXIT
+
+git show :output.json > "$tmpfile"
+
+if ! python3 "$repo_root/validate_libraries.py" "$tmpfile"; then
+    echo "pre-commit: output.json failed validation (see above). Commit aborted." >&2
+    exit 1
+fi

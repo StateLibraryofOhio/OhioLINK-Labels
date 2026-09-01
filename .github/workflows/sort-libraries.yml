@@ -24,6 +24,9 @@ jobs:
         with:
           python-version: "3.13"
 
+      - name: Validate output.json
+        run: python validate_libraries.py output.json
+
       - name: Sort libraries alphabetically
         run: python sort_libraries.py output.json
 
