@@ -1164,18 +1164,6 @@
     "route": 4008
   },
   {
-    "id": 169,
-    "libid": "616",
-    "name": "Lourdes University",
-    "address": "6832 Convent Blvd",
-    "address2": "",
-    "city": "Sylvania",
-    "state": "OH",
-    "zip": 43560,
-    "hub": "TOL",
-    "route": 5002
-  },
-  {
     "id": 170,
     "libid": "617",
     "name": "Malone University",
@@ -2374,7 +2362,7 @@
     "zip": 44555,
     "hub": "CLE",
     "route": 4003
-  },
+  }
   {
     "id": 285,
     "libid": "221",
