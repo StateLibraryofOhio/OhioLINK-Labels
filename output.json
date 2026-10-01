@@ -1776,6 +1776,18 @@
     "route": 4003
   },
   {
+    "id": 999,
+    "libid": "280",
+    "name": "SEO Service Center",
+    "address": "40780 Marietta Rd",
+    "address2": "",
+    "city": "Caldwell",
+    "state": "OH",
+    "zip": 43724,
+    "hub": "CMH",
+    "route": 3001
+  },
+  {
     "id": 228,
     "libid": "214",
     "name": "Shawnee State University",
@@ -2374,17 +2386,5 @@
     "zip": 43952,
     "hub": "CLE",
     "route": 4001
-  },
-  {
-    "id": 999,
-    "libid": "280",
-    "name": "SEO Service Center",
-    "address": "40780 Marietta Rd",
-    "address2": "",
-    "city": "Caldwell",
-    "state": "OH",
-    "zip": 43724,
-    "hub": "CMH",
-    "route": 3001
   }
 ]
