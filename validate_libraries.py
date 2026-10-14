@@ -3,8 +3,9 @@ import argparse
 import sys
 from collections import defaultdict
 
+# id is optional: sort_libraries.py assigns one to entries that omit it.
 REQUIRED_FIELDS = (
-    "id", "libid", "name", "address", "address2",
+    "libid", "name", "address", "address2",
     "city", "state", "zip", "hub", "route",
 )
 
@@ -78,7 +79,7 @@ def validate_libraries(input_path):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="Validate that a library JSON array is well-formed with unique ids and libids."
+        description="Validate that a library JSON array is well-formed with unique ids and libids. Entries may omit id; the sort workflow assigns one."
     )
     parser.add_argument("input", help="Path to the source JSON file.")
 
