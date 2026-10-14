@@ -52,8 +52,8 @@ def validate_libraries(input_path):
                 errors.append(f"{label} has a non-integer {field}: {item[field]!r}")
 
         if isinstance(item.get("id"), int):
-            if item["id"] < 0:
-                errors.append(f"{label} has a negative id: {item['id']}")
+            if item["id"] <= 0:
+                errors.append(f"{label} has an id that is not positive: {item['id']}")
             ids[item["id"]].append(label)
 
         if "libid" in item:

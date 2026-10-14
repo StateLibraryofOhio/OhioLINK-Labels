@@ -31,7 +31,7 @@ def sort_libraries(input_path, output_path=None):
     next_id = max(existing_ids, default=0) + 1
     assigned = 0
     for item in sorted_data:
-        if not isinstance(item.get("id"), int) or item["id"] < 0:
+        if not isinstance(item.get("id"), int) or item["id"] <= 0:
             item["id"] = next_id
             next_id += 1
             assigned += 1
